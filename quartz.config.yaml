@@ -4,10 +4,11 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+  description: "Digital Brain Garden of Nya-Sci"
   analytics:
     provider: plausible
   locale: ja-JP
-  baseUrl: https://github.com/Nya-Sci/digital_brain_garden
+  baseUrl: https://Nya-Sci.github.io/digital_brain_garden
   ignorePatterns:
     - private
     - templates
