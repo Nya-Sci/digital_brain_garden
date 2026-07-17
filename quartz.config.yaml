@@ -254,6 +254,14 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source:
+      name: quartz-themes
+      repo: "https://github.com/saberzero1/quartz-themes.git"
+      subdir: plugin
+    enabled: true
+    options:
+      theme: "its-theme.its-dark"
+      mode: dark
 layout:
   groups:
     toolbar:
