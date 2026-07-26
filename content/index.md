@@ -7,7 +7,6 @@ tags:
   - digital-garden
   - engineering
   - research
-draft: false
 date: 2026-07-16
 ---
 # 🌱 Digital Brain Garden へようこそ  

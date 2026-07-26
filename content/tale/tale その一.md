@@ -1,15 +1,13 @@
 ---
-title: エンジン燃焼まるわかり ～ATのクラッチからRCCIまで～  
-tags: 
-- engine  
-- combustion  
-- 内燃機関  
-- RCCI  
-- VVT  
-created: 2026-07-08  
-draft: false  
+title: エンジン燃焼まるわかり ～ATのクラッチからRCCIまで～
+tags:
+  - engine
+  - combustion
+  - 内燃機関
+  - RCCI
+  - VVT
+created: 2026-07-08
 description: AT車のクラッチという素朴な疑問から、2燃料エンジンの自作構想までを一気に辿った思考メモ
-
 ---
 # エンジン燃焼まるわかり
 
