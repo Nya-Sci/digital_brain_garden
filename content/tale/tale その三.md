@@ -8,6 +8,7 @@ tags:
   - archlinux
   - bootloader
 created: 2026-08-07
+description: 電源投入からOS起動・ディスク復号までのブートセキュリティ（Secure Boot・Measured Boot・TPM封印）を体系的にまとめたノート
 ---
 
 # セキュアブート・TPM・UEFI ブートセキュリティ 総まとめ

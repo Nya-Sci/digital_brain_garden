@@ -1,7 +1,12 @@
 ---
 title: 自作オーディオI/F 電源・入力段 設計まとめ
-tags: [audio-interface, 電源設計, DIY, ノイズ対策]
-date: 2026-08-04
+tags:
+  - audio-interface
+  - 電源設計
+  - DIY
+  - ノイズ対策
+created: 2026-08-04
+description: 自作オーディオI/Fの電源系ノイズ対策と入力段（マイク〜ADC〜電源部）の設計検討ログ
 status: 検討中（電源部を詰めている段階）
 ---
 
