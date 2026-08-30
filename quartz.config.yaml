@@ -13,6 +13,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - copilot
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
