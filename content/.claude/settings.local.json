@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:nya-sci.github.io)"
+      "WebFetch(domain:nya-sci.github.io)",
+      "PowerShell(-join \\(\\(48..57\\)+\\(97..122\\) | Get-Random -Count 8 | ForEach-Object {[char]$_}\\))"
     ]
   }
 }
