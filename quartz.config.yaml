@@ -83,6 +83,8 @@ plugins:
   - source: github:quartz-community/description
     enabled: true
     order: 70
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
   - source: github:quartz-community/latex
     enabled: true
     options:
