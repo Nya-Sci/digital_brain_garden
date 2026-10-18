@@ -5,10 +5,9 @@ configuration:
   enableSPA: true
   enablePopovers: true
   description: Digital Brain Garden of Nya-Sci
-  analytics:
-    provider: plausible
+  analytics: null
   locale: ja-JP
-  baseUrl: https://Nya-Sci.github.io/digital_brain_garden
+  baseUrl: nya-sci.github.io/digital_brain_garden
   ignorePatterns:
     - private
     - templates
@@ -176,8 +175,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/Nya-Sci/digital_brain_garden
+        X: https://x.com/Nya_Sci
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
