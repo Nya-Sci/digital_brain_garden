@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// フッターの著作権表示に名前を付け足す（© 2026 → © 2026 Nya-Sci）
+footer > p::after {
+  content: " Nya-Sci";
+}
