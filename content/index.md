@@ -91,6 +91,11 @@ created: 2026-07-16
 > > それゆえ、リンク切れ等が起こりえますので、ブックマーク等を利用される方は、ご注意ください。
 >
 
+> [!note] ライセンス
+> 本サイトの記事（文章・図）は、[クリエイティブ・コモンズ 表示 - 非営利 4.0 国際（CC BY-NC 4.0）](https://creativecommons.org/licenses/by-nc/4.0/deed.ja) のもとで公開しています。
+> 出典（サイト名・ページURL）を明記していただければ、非営利の範囲で引用・転載・改変していただけます。
+> ただし、プロフィールページの個人情報は対象外です。また、サイトの仕組み（[Quartz](https://github.com/jackyzha0/quartz)）は MIT License に従います。
+
 <p style="text-align:center; font-size:0.85em; color:gray;">
 © 2026 Digital Brain Garden — Built with Obsidian &amp; Quartz
 </p>

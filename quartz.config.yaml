@@ -222,9 +222,11 @@ layout:
       gap: 0.5rem
   byPageType:
     "404":
+      template: default
+      exclude:
+        - reader-mode
       positions:
         beforeBody: []
-        left: []
         right: []
     content: {}
     folder:

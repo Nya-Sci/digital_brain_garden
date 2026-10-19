@@ -66,9 +66,10 @@ export default {
       lastFewNotes: ({ count }) => `最新の${count}件`,
     },
     error: {
-      title: "Not Found",
-      notFound: "ページが存在しないか、非公開設定になっています。",
-      home: "ホームページに戻る",
+      title: "この区画には、まだ何も観測されていません",
+      notFound:
+        "指定された場所を探しましたが、ページは見つかりませんでした。\n庭の模様替えで名前や場所が変わったか、まだ芽を出していないのかもしれません。\n左の検索やエクスプローラーから探してみてください。",
+      home: "庭の入口に戻る",
     },
     folderContent: {
       folder: "フォルダ",

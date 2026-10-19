@@ -36,6 +36,13 @@ npx quartz build --serve
 - X: [@Nya_Sci](https://x.com/Nya_Sci)
 - GitHub: [Nya-Sci](https://github.com/Nya-Sci)
 
+## ライセンス
+
+- **記事（`content/` 内の文章・図）**：[CC BY-NC 4.0（表示 - 非営利 4.0 国際）](https://creativecommons.org/licenses/by-nc/4.0/deed.ja)
+  - 出典（サイト名・ページURL）を明記すれば、非営利の範囲で引用・転載・改変できます。
+  - プロフィールページの個人情報は対象外です。
+- **サイトの仕組み（Quartz 由来のコード）**：MIT License（`LICENSE.txt`）
+
 ## Credits
 
 This site is built with [Quartz](https://github.com/jackyzha0/quartz) by jackyzha0, licensed under the MIT License (see `LICENSE.txt`).

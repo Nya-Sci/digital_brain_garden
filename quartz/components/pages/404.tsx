@@ -1,15 +1,26 @@
 import { i18n } from "../../i18n"
+import { joinSegments } from "../../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 const NotFound: QuartzComponent = ({ cfg, ctx }: QuartzComponentProps) => {
   const url = new URL(`https://${cfg.baseUrl ?? "example.com"}`)
   const baseDir = ctx.argv.serve ? "/" : url.pathname
+  const imagePath = joinSegments(baseDir, "static/404.png")
 
   return (
     <article class="popover-hint">
-      <h1>404</h1>
-      <p>{i18n(cfg.locale).pages.error.notFound}</p>
-      <a href={baseDir}>{i18n(cfg.locale).pages.error.home}</a>
+      <img
+        src={imagePath}
+        alt="顕微鏡をのぞいて首をかしげる猫"
+        style={{ display: "block", width: "100%", maxWidth: "640px", margin: "0 auto 1rem" }}
+      />
+      <h1>404 — {i18n(cfg.locale).pages.error.title}</h1>
+      {i18n(cfg.locale)
+        .pages.error.notFound.split("\n")
+        .map((line) => (
+          <p>{line}</p>
+        ))}
+      <a href={baseDir}>→ {i18n(cfg.locale).pages.error.home}</a>
       <script
         dangerouslySetInnerHTML={{
           __html: `
