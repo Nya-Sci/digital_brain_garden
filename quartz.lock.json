@@ -112,8 +112,8 @@
     "graph": {
       "source": "github:quartz-community/graph",
       "resolved": "https://github.com/quartz-community/graph.git",
-      "commit": "411971434ab698c495dfc42870eb02d3bc539b3a",
-      "installedAt": "2026-07-25T15:22:46.928Z"
+      "commit": "e647019c05ab2a3279c9cddd7bc2f18acb9858b8",
+      "installedAt": "2026-10-19T13:54:59.935Z"
     },
     "latex": {
       "source": "github:quartz-community/latex",
