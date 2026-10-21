@@ -110,9 +110,17 @@ flowchart LR
 ## 4. esBAFとの結合:クロマチンを開く
 
 - **esBAF**(ES細胞型の BAF 複合体。ATP を使う中心部品は BRG1 タンパク質)は、ヌクレオソームを動かしてクロマチンを開く複合体
-- マウス ES 細胞では、**POGZ タンパク質・esBAF 複合体(BRG1)・HP1 タンパク質**が3者で複合体を作る
-- POGZ タンパク質が制御する場所のクロマチンの開き具合は、**esBAF/BRG1 に依存**する(Molecular Autism, 2022 / bioRxiv 2021)
+Sun, Cheng & Sun (2022, *Molecular Autism*) がマウス ES 細胞で調べた結果:
+
+- POGZ タンパク質は、ゲノム上の主に**プロモーターとエンハンサー**(遺伝子のスイッチ部分)に結合している(ChIP-seq)
+- POGZ タンパク質は esBAF 複合体と物理的に結合し、一緒にエンハンサーの活性を調節する
+- 神経へ分化させるとき、POGZ タンパク質が **esBAF/BRG1 と H3K27ac**(活性化の目印)を連れてくることが、神経前駆細胞の遺伝子の発現に重要
+- POGZ タンパク質は、遺伝子によって**促進にも抑制にも**働く
 - *Pogz* 遺伝子を壊すと、ES 細胞の未分化性(何にでもなれる状態)を保てなくなる
+
+> [!note] HP1 との三者複合体について
+> 査読前の版(bioRxiv 2021)のタイトルには「esBAF and HP1γ」とあったが、出版版の要旨では esBAF との結合だけが述べられている。HP1γ を含む三者複合体として書くのは控えておく。
+> また著者自身が限界として、①動物個体での検証がない、②患者に多いのは片方の遺伝子だけ壊れた状態(ヘテロ)だが、この研究は両方壊した細胞である、を挙げている。
 
 ```mermaid
 flowchart LR
@@ -140,9 +148,14 @@ flowchart LR
 | 文脈 | POGZ タンパク質の相手 | クロマチンへの効果 | 転写 |
 |---|---|---|---|
 | 細胞分裂中の染色体 | HP1α(取り合いで結合) | HP1α を外す | — |
-| ES 細胞 | esBAF(BRG1)+ HP1 | 開く | 促進 |
+| ES 細胞 | esBAF(BRG1) | 開く(H3K27ac も連れてくる) | 促進・抑制の両方 |
 | 胎児期の前脳 | ADNP + HP1γ | 開く | 促進(シナプス関連遺伝子) |
+| 小脳(脳特異的 KO マウス) | — | (ヘテロクロマチン側の異常と解釈) | **抑制**(KO で多くの遺伝子が上がる) |
 | (古典的な見方) | HP1 | 閉じる | 抑制 |
+
+> [!question] 思考メモ:小脳では「抑制」側
+> Suliman-Lavie et al. (2020) では、ルシフェラーゼ実験で POGZ タンパク質は**転写を抑える**側に働き、*Pogz* 遺伝子を脳で壊したマウスの小脳では多くの遺伝子の発現が**上がって**いた。
+> 前脳(Markenscoff-Papadimitriou)では「促進」、小脳では「抑制」。**同じタンパク質でも、場所によって符号が逆**になっている。二面性モデルを裏付ける材料。
 
 ```mermaid
 flowchart TD
@@ -171,9 +184,11 @@ flowchart TD
 
 - **自閉スペクトラム症(ASD)**:大規模なゲノム解析で、*POGZ* 遺伝子の *de novo* 変異(親にはなく子で新たに生じた変異)が繰り返し見つかる。高リスク遺伝子のひとつ
 - **White-Sutton 症候群**:*POGZ* 遺伝子の機能が失われる変異による神経発達症(知的障害・発達の遅れ・小頭症・**睡眠障害**などを含む)
+  - これまでに報告された原因変異を持つ患者を調べ直すと、**52%に睡眠障害**があった。肥満は睡眠障害のリスク因子ではなかった(Marquezini et al., 2024)
+  - 同じ研究で、POGZ タンパク質の制御を受ける遺伝子と睡眠関連の遺伝子の重なりを調べると、「概日リズムの制御」などのパスウェイが濃縮していた(データベース上の解析で、実験的な証明ではない)
 - マウスモデル
-  - 患者で見つかった変異を *Pogz* 遺伝子に導入したマウスで、大脳皮質の発生異常と ASD 様の行動(Matsumura et al., *Nat Commun* 2020)
-  - *Pogz* 遺伝子を壊したマウスで、小脳の転写異常と ASD 様の行動(Suliman-Lavie et al., *Nat Commun* 2020)
+  - 患者で見つかった *de novo* 変異を、片方の *Pogz* 遺伝子に導入したマウス(ヘテロ接合体)で、大脳皮質の発生異常と ASD 様の行動。社会性の異常は、過剰になった神経の興奮性を抑えると**改善した**(Matsumura et al., *Nat Commun* 2020)
+  - 脳だけで *Pogz* 遺伝子を壊したマウスで、小頭症・成長障害・学習と運動の障害、小脳の転写異常(→ §6)(Suliman-Lavie et al., *Nat Commun* 2020)
 
 > [!important] 睡眠障害という伏線
 > ASD・White-Sutton 症候群の両方で、**睡眠の問題**が多い。
@@ -216,9 +231,10 @@ flowchart LR
 
 - Nozawa RS et al. (2010) Human POGZ modulates dissociation of HP1α from mitotic chromosome arms through Aurora B activation. *Nat Cell Biol* 12:719–727. [PubMed](https://pubmed.ncbi.nlm.nih.gov/20562864)
 - Markenscoff-Papadimitriou E et al. (2021) Autism risk gene POGZ promotes chromatin accessibility and expression of clustered synaptic genes. *Cell Reports*. [PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9512081/)
-- Autism-associated protein POGZ maintains embryonic stem cells by association with esBAF and HP1γ. [bioRxiv](https://www.biorxiv.org/content/10.1101/2021.02.07.430173v1)
-- Matsumura K et al. (2020) Pathogenic POGZ mutation causes impaired cortical development and reversible autism-like phenotypes. *Nat Commun*.
-- Suliman-Lavie R et al. (2020) Pogz deficiency leads to transcription dysregulation and impaired cerebellar activity underlying autism-like behavior in mice. *Nat Commun*.
+- Sun X, Cheng L, Sun Y (2022) Autism-associated protein POGZ controls ESCs and ESC neural induction by association with esBAF. *Molecular Autism* 13(1):24. [DOI](https://doi.org/10.1186/s13229-022-00502-9)(査読前版:[bioRxiv 2021](https://www.biorxiv.org/content/10.1101/2021.02.07.430173v1))
+- Matsumura K et al. (2020) Pathogenic POGZ mutation causes impaired cortical development and reversible autism-like phenotypes. *Nat Commun* 11:859. [DOI](https://doi.org/10.1038/s41467-020-14697-z)
+- Suliman-Lavie R et al. (2020) Pogz deficiency leads to transcription dysregulation and impaired cerebellar activity underlying autism-like behavior in mice. *Nat Commun* 11:5836. [DOI](https://doi.org/10.1038/s41467-020-19577-0)
+- Marquezini B et al. (2024) Exploring the molecular pathways linking sleep phenotypes and POGZ-associated neurodevelopmental disorder. *J Med Genet*. [DOI](https://doi.org/10.1136/jmg-2023-109508)
 - He J et al. (2026) Reciprocal regulation between autism risk gene POGZ and circadian clock. *JCI Insight*. [DOI](https://doi.org/10.1172/jci.insight.193622)
 - OMIM \*614787 POGZ
 
