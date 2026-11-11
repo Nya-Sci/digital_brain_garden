@@ -13,6 +13,7 @@ configuration:
     - templates
     - .obsidian
     - copilot
+    - tale/勉強/概日リズム/**
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
